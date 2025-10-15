@@ -1,0 +1,132 @@
+:root {
+    --background-color: black;
+    --Darker-color: #222;
+    --Dark-color: #333;
+    --Light-color: #666;
+    --Lighter-color: #999;
+    --text-color: white;
+
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--Dark-color);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--Lighter-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 50%;
+    margin: 10px auto 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+
+    i {
+        font-size: 2em;
+    }
+}
+
+.channel-title h1 {
+    font-size: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 0 auto 80px auto;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--Dark-color);
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+main a img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+main a:hover img {
+    transform: scale(1.05);
+}
+main a h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+main a h2:hover {
+    font-size: x-large;
+    transition: 0.3s;
+}
+
+main a:hover {
+    background-color: var(--Lighter-color);
+    color: var(--background-color);
+    transition: 0.3s;
+}
+main a:active {
+    background-color: var(--Light-color);
+    color: var(--background-color);
+    transition: 0.3s;
+}
+
+footer {
+    background-color: var(--Dark-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    width: 50%;
+    transform: translateX(-50%);
+    border-top: 2px solid var(--Lighter-color);
+    border-radius: 10px;
+    margin: 0;
+    overflow: hidden;
+    z-index: 100;
+
+}
+
+footer img {
+    height: 20px;
+    vertical-align: middle;
+    margin-bottom: 1px;
+    padding-bottom: 0px;
+}
+footer p {
+    margin: 2px 0 0 0;
+    font-size: 0.9em;
+}

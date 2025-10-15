@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="VPstyle.css">
+
+    <script type="module" src="../../HTMLstructure/video-player.js"></script>
+
+    <title>Rkoz Video - I Made A Roblox Shorts Channel (I Regret It)</title>
+</head>
+<body>
+    <script>
+    async function includeHTML(id, file) {
+        const element = document.getElementById(id);
+        const response = await fetch(file);
+        element.innerHTML = await response.text();
+    }
+
+    window.addEventListener("DOMContentLoaded", async () => {
+        await includeHTML("header", "/HTMLstructure/header.html");
+        await includeHTML("footer", "/HTMLstructure/footer.html");
+    });
+    </script>
+
+    <div id="header"></div>
+    
+    <div class="back-btn-wrapper">
+        <a href="../../RoBezko.html" class="BackBTN"><i class="fa-solid fa-circle-left"></i> Back to Videos</a>
+    </div>
+
+    <main>
+        <video-player 
+            YTlink="https://www.youtube.com/embed/p0S2GgvGv2Q " 
+            Local="/VideoFiles/RoBezko/I made a roblox shorts channel(I regret it).mp4"
+            >
+            <h3>#roblox #robezko</h3>
+
+            <p>
+            I was wondering how easy it is to run a uwucutesingle style channel and how popular it would get... and well, the results are dumb.
+            </p>
+
+            <h4>Credits</h4>
+            <ul>
+            <li>
+                <strong>2nd channel:</strong>
+                <a href="https://www.youtube.com/@RokoRandomz" target="_blank">@RokoRandomz</a>
+            </li>
+            <li>
+                <strong>Last video:</strong>
+                <a href="whatsNewInULT.html" target="_blank">What's New In ULTRAKILL?</a>
+            </li>
+            </ul>
+
+            <h4>♫ Music Used</h4>
+            <ul>
+            <li><a href="https://youtu.be/MMwM6hLEyeY?si=dqkti_JFlq8iQrsy" target="_blank">Lights, Camera, Action</a></li>
+            <li><a href="https://youtu.be/dWbSg0VOSgg?si=7OXL7i9ehNGxQ4Qe" target="_blank">Welcome to Station Square</a></li>
+            <li><a href="https://youtu.be/6MndM7CKbq4?si=aINqfy-lH0SmZQSG" target="_blank">Blossom Haze Press Garden Zone Act 2</a></li>
+            <li><a href="https://youtu.be/_SBKj5ofGVw?si=_c3NliTvYZPqEXln" target="_blank">Azure Blue World Emerald Coast</a></li>
+            <li><a href="https://youtu.be/e48OijK2LiI?si=Kj-hbZf768utzn3K" target="_blank">Hydrocity Zone Act 1</a></li>
+            </ul>
+
+            <h4>⏱️ Time Stamps</h4>
+            <ul>
+            <li>Intro (please skip this part): 0:00</li>
+            <li>Setting up RBX account: 0:33</li>
+            <li>Youtube stuff: 3:54</li>
+            <li>Why: 5:19</li>
+            <li>Editing one vid: 5:54</li>
+            <li>Ending: 8:38</li>
+            </ul>
+        </video-player>
+        
+    </main>
+
+    <aside>
+        <br>
+        <br>
+    </aside>
+
+    <div id="footer"></div>
+
+</body>
+</html>

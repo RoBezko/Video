@@ -1,0 +1,203 @@
+:root {
+  --background-color: black;
+  --Darker-color: #222;
+  --Dark-color: #333;
+  --Light-color: #666;
+  --Lighter-color: #999;
+  --text-color: white;
+  --KLBlue: #0080FF;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* prevents horizontal scrolling */
+}
+
+header {
+  background-color: var(--Dark-color);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid var(--Lighter-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: clamp(300px, 50%, 900px);
+  margin: 10px auto 20px;
+  border-radius: 10px;
+  i {
+    font-size: 2em;
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto 120px;
+  justify-items: center;
+  align-items: start;
+  box-sizing: border-box;
+}
+
+main video-player {
+    width: 100%;
+    max-width: 1000px;
+    background-color: var(--Darker-color);
+    border: 2px solid var(--Lighter-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+main video-player iframe,
+main video-player video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    display: block;
+}
+
+main video-player .player {
+    padding: 10px;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1em;
+    background-color: var(--Dark-color);
+    border-top: 2px solid var(--Lighter-color);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main video-player .source-select {
+    padding: 10px;
+    background-color: var(--Dark-color);
+    border: 2px solid var(--Lighter-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+main video-player .source-select:hover {
+    background-color: var(--KLBlue);
+    color: var(--background-color);
+    cursor: pointer;
+
+    transition: background-color 0.3s, color 0.3s;
+}
+
+video-player .controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--Dark-color);
+    border-top: 2px solid var(--Lighter-color);
+    padding: 8px;
+    border-radius: 0 0 8px 8px;
+}
+
+video-player .controls label {
+    color: var(--Lighter-color);
+    font-size: 0.9em;
+}
+
+video-player .controls select {
+    background-color: var(--Darker-color);
+    color: var(--text-color);
+    border: 1px solid var(--Lighter-color);
+    border-radius: 4px;
+    padding: 4px 6px;
+    font-size: 0.9em;
+}
+
+video-player .description {
+    padding: 16px;
+    background-color: var(--Darker-color);
+    text-align: left;
+    line-height: 1.5;
+}
+
+video-player .description h3,
+video-player .description h4 {
+    color: var(--KLBlue);
+    margin-top: 1em;
+}
+
+video-player .description a {
+    color: var(--KLBlue);
+    text-decoration: none;
+}
+
+video-player .description a:hover {
+    text-decoration: underline;
+}
+
+.back-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.BackBTN {
+    background-color: var(--Dark-color);
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid var(--Lighter-color);
+    border-radius: 8px;
+    font-size: 1em;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.BackBTN:hover {
+    background-color: var(--Lighter-color);
+    color: var(--background-color);
+}
+.BackBTN i {
+    font-size: 1.2em;
+}
+
+footer {
+  background-color: var(--Dark-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  left: 50%;
+  bottom: 10px;
+  width: clamp(300px, 50%, 900px);
+  transform: translateX(-50%);
+  border-top: 2px solid var(--Lighter-color);
+  border-radius: 10px;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+footer img {
+  height: 20px;
+  vertical-align: middle;
+  margin-bottom: 1px;
+}
+
+footer p {
+  margin: 2px 0 0;
+  font-size: 0.9em;
+}

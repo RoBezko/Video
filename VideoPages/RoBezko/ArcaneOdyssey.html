@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="VPstyle.css">
+
+    <script type="module" src="../../HTMLstructure/video-player.js"></script>
+
+    <title>Rkoz Video - Arcane Odyssey</title>
+</head>
+<body>
+    <script>
+    async function includeHTML(id, file) {
+        const element = document.getElementById(id);
+        const response = await fetch(file);
+        element.innerHTML = await response.text();
+    }
+
+    window.addEventListener("DOMContentLoaded", async () => {
+        await includeHTML("header", "/HTMLstructure/header.html");
+        await includeHTML("footer", "/HTMLstructure/footer.html");
+    });
+    </script>
+
+    <div id="header"></div>
+    
+    <div class="back-btn-wrapper">
+        <a href="../../RoBezko.html" class="BackBTN"><i class="fa-solid fa-circle-left"></i> Back to Videos</a>
+    </div>
+
+    <main>
+        <video-player 
+            YTlink="https://www.youtube.com/embed/Tbtpzsbkbi0" 
+            Local="/VideoFiles/RoBezko/ARCANE ODYSSEY.mp4"
+            >
+            <h3>#RoBezko #roblox #arcaneodyssey</h3>
+
+            <p>
+                Arcane Odyssey is a Roblox game that’s as big as my will to not procrastinate and edit a video in 2 months.
+                I might not make a part 2, but I do plan a P-OS DEMO video next. Hopefully before New Year’s!
+            </p>
+
+            <p>
+                Meanwhile, I’ve also been lying on the internet as <strong>Pierluigi</strong>.
+                If you want to help out in the misinformation campaign, go to the channel and claim that everything Pier said is
+                100% factual. Who would ever lie on the internet, right?
+            </p>
+
+            <p><em>Does anyone read these?</em></p>
+
+            <p><strong>2nd Channel:</strong> <a href="https://www.youtube.com/@RokoRandomz" target="_blank">@RokoRandomz</a></p>
+            <p><strong>Last Video:</strong> <a href="HELLMET.html" target="_blank">HELLMET</a></p>
+            <p><strong>Game:</strong> <a href="https://www.roblox.com/games/3272915504/Arcane-Odyssey-Early-Access" target="_blank">Arcane Odyssey on Roblox</a></p>
+
+            <h4>♫ Music Used</h4>
+            <ul>
+                <li><a href="https://youtu.be/dgJWZiBt6_w">Can You Feel The Sunshine</a></li>
+                <li><a href="https://youtu.be/LIUecLaI_m8">Ruins</a></li>
+                <li><a href="https://youtu.be/BiVCNCjowBA">Ship Of Fools</a></li>
+                <li><a href="https://youtu.be/YXtFVb1EN0M">Subspace Distortion (Supernova Mix)</a></li>
+                <li><a href="https://youtu.be/b1oLzOb7_-A">Life in a Greenhouse</a></li>
+                <li><a href="https://youtu.be/2dWxz19GEko">Cyber Space 4-B – Escape the Loop Remix</a></li>
+                <li><a href="https://youtu.be/lNgekqEyj_E">Green is the Color</a></li>
+                <li><a href="https://www.youtube.com/watch?v=TSn9QIg29yI">Market Street</a></li>
+                <li><a href="https://youtu.be/WZw9LXsiqmQ">Kronos Island (base and final lap)</a></li>
+            </ul>
+
+            <h4>⏱️ Time Stamps</h4>
+            <ul>
+                <li>Intro – 0:00</li>
+                <li>Dawn Island – 1:05</li>
+                <li>Redwake – 2:21</li>
+                <li>Frostmil – 6:50</li>
+                <li>Cirrus Island – 9:24</li>
+                <li>Outro – 13:51</li>
+            </ul>
+        </video-player>
+        
+    </main>
+
+    <aside>
+        <br>
+        <br>
+    </aside>
+
+    <div id="footer"></div>
+
+</body>
+</html>

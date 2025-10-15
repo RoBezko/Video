@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="VPstyle.css">
+
+    <script type="module" src="../../HTMLstructure/video-player.js"></script>
+
+    <title>Rkoz Video - How I Beated ULTRAKILL With A Trackpad</title>
+</head>
+<body>
+    <script>
+    async function includeHTML(id, file) {
+        const element = document.getElementById(id);
+        const response = await fetch(file);
+        element.innerHTML = await response.text();
+    }
+
+    window.addEventListener("DOMContentLoaded", async () => {
+        await includeHTML("header", "/HTMLstructure/header.html");
+        await includeHTML("footer", "/HTMLstructure/footer.html");
+    });
+    </script>
+
+    <div id="header"></div>
+    
+    <div class="back-btn-wrapper">
+        <a href="../../RoBezko.html" class="BackBTN"><i class="fa-solid fa-circle-left"></i> Back to Videos</a>
+    </div>
+
+    <main>
+        <video-player 
+            YTlink="https://www.youtube.com/embed/kwYnq-ZC9pM" 
+            Local="/VideoFiles/RoBezko/How I Beated ULTRAKILL With A Trackpad.mp4"
+            >
+            <h3>#RoBezko #ultrakill</h3>
+
+            <p>
+                (without act 2)
+            </p>
+
+
+            <p>
+                Today I beat ULTRAKILL with a trackpad
+            </p>
+
+            <p>
+            <strong>2nd channel:</strong> 
+            <a href="https://www.youtube.com/@RokoRandomz" target="_blank">@RokoRandomz</a><br>
+            <strong>Last video:</strong> 
+            <a href="10SubSpecial.html" target="_blank">10 subscribers special</a>
+            </p>
+
+            <h4>⏱️ Time Stamps</h4>
+            <ul>
+            <li>Stoff’s 1st appearance — 0:00</li>
+            <li>Prologue — 0:40</li>
+            <li>Act 1 #1 — 2:18</li>
+            <li>Stoff’s 2nd appearance — 4:04</li>
+            <li>Act 1 #2 — 4:28</li>
+            <li>Outro — 8:16</li>
+            </ul>
+
+        </video-player>
+        
+    </main>
+
+    <aside>
+        <br>
+        <br>
+    </aside>
+
+    <div id="footer"></div>
+
+</body>
+</html>

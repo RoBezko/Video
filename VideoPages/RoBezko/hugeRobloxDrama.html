@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="VPstyle.css">
+
+    <script type="module" src="../../HTMLstructure/video-player.js"></script>
+
+    <title>Rkoz Video - HUGE Roblox drama</title>
+</head>
+<body>
+    <script>
+    async function includeHTML(id, file) {
+        const element = document.getElementById(id);
+        const response = await fetch(file);
+        element.innerHTML = await response.text();
+    }
+
+    window.addEventListener("DOMContentLoaded", async () => {
+        await includeHTML("header", "/HTMLstructure/header.html");
+        await includeHTML("footer", "/HTMLstructure/footer.html");
+    });
+    </script>
+
+    <div id="header"></div>
+    
+    <div class="back-btn-wrapper">
+        <a href="../../RoBezko.html" class="BackBTN"><i class="fa-solid fa-circle-left"></i> Back to Videos</a>
+    </div>
+
+    <main>
+        <video-player 
+            YTlink="https://www.youtube.com/embed/KBKDIJVAn3U" 
+            Local="/VideoFiles/RoBezko/HUGE Roblox drama.mp4"
+            >
+            <p>
+                Defitnaly not clickbait and we never would enter a gambling website
+            </p>
+
+        </video-player>
+        
+    </main>
+
+    <aside>
+        <br>
+        <br>
+    </aside>
+
+    <div id="footer"></div>
+
+</body>
+</html>

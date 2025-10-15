@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="VPstyle.css">
+
+    <script type="module" src="../../HTMLstructure/video-player.js"></script>
+
+    <title>Rkoz Video - Hellmet</title>
+</head>
+<body>
+    <script>
+    async function includeHTML(id, file) {
+        const element = document.getElementById(id);
+        const response = await fetch(file);
+        element.innerHTML = await response.text();
+    }
+
+    window.addEventListener("DOMContentLoaded", async () => {
+        await includeHTML("header", "/HTMLstructure/header.html");
+        await includeHTML("footer", "/HTMLstructure/footer.html");
+    });
+    </script>
+
+    <div id="header"></div>
+    
+    <div class="back-btn-wrapper">
+        <a href="../../RoBezko.html" class="BackBTN"><i class="fa-solid fa-circle-left"></i> Back to Videos</a>
+    </div>
+
+    <main>
+        <video-player 
+            YTlink="https://www.youtube.com/embed/ZHctLGXZL0U" 
+            Local="/VideoFiles/RoBezko/HELLMET.mp4"
+            >
+            <h3>#RoBezko #roblox #hellmet</h3>
+
+            <p>
+            Not sure if you people will like this type of content, but this is gonna be the type of thing I’m gonna do for the year - unless I change my mind.
+            </p>
+
+            <h4>Credits</h4>
+            <ul>
+            <li>
+                <strong>Dawnbraker boss fight:</strong>
+                <a href="https://www.youtube.com/watch?v=mXbAqRwUmkQ&t" target="_blank">Watch here</a>
+            </li>
+            <li>
+                <strong>Calar gameplay:</strong>
+                <a href="https://www.youtube.com/watch?v=eE5QJopqzVU" target="_blank">Watch here</a>
+            </li>
+            <li>
+                <strong>Kaska gameplay:</strong>
+                <a href="https://www.youtube.com/watch?v=ILeB73MMamo" target="_blank">Watch here</a>
+            </li>
+            </ul>
+
+            <p>
+            <strong>2nd channel:</strong> 
+            <a href="https://www.youtube.com/@RokoRandomz" target="_blank">@RokoRandomz</a><br>
+            <strong>Last video:</strong> 
+            <a href="iMadeARobloxShortsChannel.html" target="_blank">I made a roblox shorts channel(I regret it)</a>
+            </p>
+
+            <h4>♫ Music Used</h4>
+            <ul>
+            <li><a href="https://youtu.be/HU51CqtZSho?si=Px87AKLXrZVEjWy1" target="_blank">Vengeance is Mine</a></li>
+            <li><a href="https://www.youtube.com/watch?v=e48OijK2LiI" target="_blank">Hydrocity Act 1</a></li>
+            <li><a href="https://youtu.be/CmPyPga37kI?si=LjwGoDpvjAkLAsaJ" target="_blank">Space Colony Ark: Act 1</a></li>
+            <li><a href="https://youtu.be/X_Snic-49qk?si=y2ia__PNmRCfvkFx" target="_blank">Sunset Heights: Act 1</a></li>
+            <li><a href="https://youtu.be/M2HNh9W-bhU?si=sLFUnZOCdsvgPAtb" target="_blank">Sonic Mania Adventures Big Arms</a></li>
+            <li><a href="https://youtu.be/t9A6788MNjk?si=ImJ0Smrl3FTKS2c0" target="_blank">vs. Metal</a></li>
+            <li><a href="https://youtu.be/CejefZrOLtk?si=35vL-lWYbgNmBzJQ" target="_blank">Tornado Scramble</a></li>
+            </ul>
+
+            <h4>⏱️ Time Stamps</h4>
+            <ul>
+            <li>Intro — 0:00</li>
+            <li>Mission 0 — 0:45</li>
+            <li>Mission 1 — 1:06</li>
+            <li>Mission 2 — 3:05</li>
+            <li>Animation Thing — 4:08</li>
+            <li>Mission 3 — 4:53</li>
+            <li>Outro — 8:02</li>
+            </ul>
+
+        </video-player>
+        
+    </main>
+
+    <aside>
+        <br>
+        <br>
+    </aside>
+
+    <div id="footer"></div>
+
+</body>
+</html>

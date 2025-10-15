@@ -1,0 +1,176 @@
+:root {
+    --background-color: black;
+    --Darker-color: #222;
+    --Dark-color: #333;
+    --Light-color: #666;
+    --Lighter-color: #999;
+    --text-color: white;
+    --legacy-color: #e9d308;
+}
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--Dark-color);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--Lighter-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    width: 50%;
+    margin: 10px auto 20px auto;
+    border-radius: 10px;
+    overflow: hidden;
+
+    i {
+        font-size: 2em;
+    }
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto 100px auto;
+    justify-items: center;
+    align-items: start;
+}
+
+main a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    max-width: 350px;
+}
+
+main .video-card {
+    background-color: var(--Darker-color);
+    border: 2px solid var(--Lighter-color);
+    border-radius: 10px;
+    overflow: auto;
+    width: 100%;
+    max-width: 350px;
+    min-width: 250px;
+    min-height: 220px;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+main .video-card h2 {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--Dark-color);
+    color: var(--text-color);
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+main .video-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid var(--Lighter-color);
+}
+
+main .video-card:hover {
+    transform: scale(1.05);
+}
+main .video-card:active {
+    transform: scale(0.95);
+}
+main .video-card:focus {
+    outline: 2px solid var(--Lighter-color);
+    outline-offset: 2px;
+}
+
+main .legacy {
+    border-color: var(--legacy-color);
+    background-color: rgb(233, 211, 8);
+}
+main .legacy h2 span {
+    color: var(--legacy-color);
+    font-weight: bold;
+}
+
+main .video-card .legacy img {
+    border-bottom: 2px solid var(--legacy-color);
+}
+
+.back-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.BackBTN {
+    background-color: var(--Dark-color);
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid var(--Lighter-color);
+    border-radius: 8px;
+    font-size: 1em;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.BackBTN:hover {
+    background-color: var(--Lighter-color);
+    color: var(--background-color);
+}
+.BackBTN i {
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: var(--Dark-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    width: 50%;
+    transform: translateX(-50%);
+    border-top: 2px solid var(--Lighter-color);
+    border-radius: 10px;
+    margin: 0;
+    overflow: hidden;
+    z-index: 100;
+
+}
+
+footer img {
+    height: 20px;
+    vertical-align: middle;
+    margin-bottom: 1px;
+    padding-bottom: 0px;
+}
+footer p {
+    margin: 2px 0 0 0;
+    font-size: 0.9em;
+}
