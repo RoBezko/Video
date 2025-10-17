@@ -11,10 +11,20 @@
     <title>Rkoz Video</title>
 </head>
 <body>
-    <header>
-        <i class="fa-regular fa-circle-play"></i>
-        <h1>Rkoz Video</h1>
-    </header>
+    <script>
+    async function includeHTML(id, file) {
+        const element = document.getElementById(id);
+        const response = await fetch(file);
+        element.innerHTML = await response.text();
+    }
+
+    window.addEventListener("DOMContentLoaded", async () => {
+        await includeHTML("header", "/HTMLstructure/header.html");
+        await includeHTML("footer", "/HTMLstructure/footer.html");
+    });
+    </script>
+
+    <div id="header"></div>
 
     <div class="back-btn-wrapper">
         <a href="index.html" class="BackBTN"><i class="fa-solid fa-circle-left"></i> Back to Channel select</a>
@@ -173,9 +183,6 @@
         <br>
     </aside>
 
-    <footer>
-        <img src="Extra/RKO pixel sprite.gif" alt="Rko pixel" style="width: 200px; height: 80px;">
-        <p>© 2012 Rkoz.cc</p>
-    </footer>
+    <div id="footer"></div>
 </body>
 </html>
