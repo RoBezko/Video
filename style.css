@@ -110,13 +110,12 @@ footer {
     position: fixed;
     left: 50%;
     bottom: 10px;
-    width: 50%;
+    width: clamp(300px, 50%, 900px);
     transform: translateX(-50%);
     border-top: 2px solid var(--Lighter-color);
     border-radius: 10px;
-    margin: 0;
-    overflow: hidden;
     z-index: 100;
+    box-sizing: border-box;
 
 }
 
