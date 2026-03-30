@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="VPstyle.css">
+
+    <script type="module" src="../../HTMLstructure/video-player.js"></script>
+
+    <title>Rkoz Video - Arcane Odyssey</title>
+</head>
+<body>
+    <script>
+    async function includeHTML(id, file) {
+        const element = document.getElementById(id);
+        const response = await fetch(file);
+        element.innerHTML = await response.text();
+    }
+
+    window.addEventListener("DOMContentLoaded", async () => {
+        await includeHTML("header", "../../HTMLstructure/header.html");
+        await includeHTML("footer", "../../HTMLstructure/footer.html");
+    });
+    </script>
+
+    <div id="header"></div>
+    
+    <div class="back-btn-wrapper">
+        <a href="../../RoBezko.html" class="BackBTN"><i class="fa-solid fa-circle-left"></i> Back to Videos</a>
+    </div>
+
+    <main>
+        <video-player 
+            YTlink="https://www.youtube.com/embed/K2KTjetNOTI?si=F9JxzAnQNZXeGNar" 
+            Local="https://files.catbox.moe/qbsfnx.mp4"
+            >
+            <h3>#RoBezko #outcomememories</h3>
+
+            <p>
+                I am having an Outcome of these Memories
+            </p>
+
+            <p>
+                Anyways hello there, I was going to be making the Starcyst(+ Vile) video as my next video,
+                but then I got into OM, then I met some friends that also do youtube and make videos on the game,
+                so I decided to make my own, in record time to, only a MONTH of production,
+                man imagine taking 6 months on one yt video *cough* *cough* Arcane Odyssey *cough* *cough* - yea that was a crazy burnout.
+            </p>
+
+            <p>But anyways you may see me in the aforementioned friend videos,
+                like Okimtired's, so check out the amarican if you want more stuff on the game,
+                alr cya :D
+            </p>
+
+            <p><strong>2nd Channel:</strong> <a href="https://www.youtube.com/@RokoRandomz" target="_blank">@RokoRandomz</a></p>
+            <p><strong>Last Video:</strong> <a href="ArcaneOdyssey.html" target="_blank">ARCANE ODYSSEY</a></p>
+            <p><strong>Game:</strong> <a href="https://www.roblox.com/games/14608970270/Outcome-Memories-v0-2" target="_blank">Outcome Memories on Roblox</a></p>
+
+            <h4>♫ Music Used</h4>
+            <ul>
+                <li><a href="https://youtu.be/BAeNh1xJ168?si=4uO9xW1osMTwpX5w">Friends No More(Round 2)</a></li>
+                <li><a href="https://youtu.be/eZFWvopvZGA?si=rhwUVLmZqedwj4yg">80 OR LESS[HILL.GYM]</a></li>
+                <li><a href="https://youtu.be/2Dz0IJz1yVU?si=xAX3VoCWf7-4JtxA">Tarven (Shop Soundtrack)</a></li>
+                <li><a href="https://youtu.be/LsfmbJrvzTg?si=shnIMTgNa9Vwq4Ep">DON’T BLINK (Instrumental)</a></li>
+                <li><a href="https://youtu.be/bwtNSRP89oc?si=oAF3TzgTNKyI9_rb">[INSTRUMENTAL]Still My Call, Fools</a></li>
+                <li><a href="https://youtu.be/q1J-BYn5sXM?si=Vdpjp5sLlS46cvPc">Wilted Blossom</a></li>
+                <li><a href="https://youtu.be/xZs212Mzzok?si=xZa1pJmqU_KzbBCt">No One’s Hero</a></li>
+                <li><a href="https://youtu.be/VonTqieyTbo?si=45ABxUMyQehzi8W6">New World</a></li>
+            </ul>
+
+            <h4>⏱️ Time Stamps</h4>
+            <ul>
+                <li>The Intro – 0:00</li>
+                <li>The Game – 1:08</li>
+                <li>The Lobby – 1:33</li>
+                <li>The Survivors – 2:28</li>
+                <li>The Executioners – 6:16</li>
+                <li>The Extras – 7:31</li>
+                <li>The Outro – 9:10</li>
+            </ul>
+        </video-player>
+        
+    </main>
+
+    <aside>
+        <br>
+        <br>
+    </aside>
+
+    <div id="footer"></div>
+
+</body>
+</html>
